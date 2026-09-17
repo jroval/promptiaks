@@ -380,11 +380,25 @@ The final result must feel like a traditional black-ink and alcohol-marker portr
     rating: 0,
     title: "Rotu con Fondo Desenfocado",
     image: "images/prompt-38.webp",
-    text: `Transform the person in the image into a hand-drawn illustration with a realistic marker rendering style, preserving 100% of their identity, including exact facial features, proportions, expression, hairstyle, pose and body structure. Do not alter, beautify or reinterpret the person in any way; only change the visual medium.
-Use bold black outlines with thick contour lines, visible marker strokes, slight handmade irregularities, vibrant saturated colors and subtle natural shading created through layered marker passes. Keep details clean and expressive, especially on the face, without losing recognizability. Add a subtle matte paper texture so the entire image looks genuinely drawn and colored with real markers.
-Keep the original environment, but render the background with a strong professional shallow-depth-of-field effect: the subject must remain sharp, clear and visually dominant while the background is noticeably soft and out of focus, similar to a portrait photographed with a wide-aperture lens. Preserve the recognizable colors, shapes and atmosphere of the original setting without showing sharp background details.
-The background blur must also remain fully illustrated in the same hand-drawn marker style: soft marker shapes, simplified edges, diffused marker strokes and reduced detail. Do not introduce photographic blur, realistic bokeh or digitally blurred photographic elements.
-The final result should feel like a professional portrait composition entirely illustrated with black ink and alcohol markers, with a crisp, detailed subject against a softly blurred marker-rendered background.`
+    text: `Transform the entire image into a fully hand-drawn alcohol-marker illustration. No photographic pixels, photographic textures or untouched parts of the original image should remain anywhere in the final result.
+Preserve the person with maximum identity accuracy: exact facial features, proportions, expression, hairstyle, pose and body structure. Do not beautify, stylize, reinterpret or modify their appearance. Only change the visual medium.
+Render the subject in a realistic professional marker-illustration style using bold black ink outlines, thick confident contour lines, clearly visible alcohol-marker strokes, layered marker shading, slight handmade irregularities, vibrant saturated colors and subtle paper grain. Facial details must remain precise and recognizable while still looking unmistakably hand-drawn with real markers.
+Completely redraw the original environment in the SAME marker-and-ink style. The background must never look like a blurred photograph underneath the illustration. Replace all photographic detail with clearly illustrated marker shapes, visible broad marker strokes, simplified forms, hand-drawn edges and blocks of layered color.
+Create a very strong illustrated shallow-depth-of-field effect. The person must be crisp, detailed and sharply drawn, while the background becomes progressively softer, simpler and much less defined.
+The background blur must be created through illustration, NOT through photographic or digital blur:
+
+* use large loose marker strokes
+* strongly simplify shapes and objects
+* remove fine lines and small details
+* soften and partially merge edges
+* reduce contrast behind the subject
+* use broad overlapping marker passes
+* represent distant elements as soft abstract marker silhouettes
+* keep enough color and general shape to recognize the original setting
+
+Even the most out-of-focus areas must visibly show marker pigment, paper texture and hand-rendered color transitions. They should look like intentionally blurred marker drawings, never like a photograph with Gaussian blur or lens blur applied.
+Avoid photographic bokeh circles, realistic lens blur, smooth digital gradients, photographic textures, photorealistic background elements or sharp background details.
+The final image must unmistakably look like a complete traditional illustration made with black ink and alcohol markers on matte paper: a highly detailed and recognizable subject in sharp focus against a strongly defocused, simplified and visibly marker-rendered background.`
   },
   {
     id: 39,
