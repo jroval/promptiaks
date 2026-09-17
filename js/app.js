@@ -1,7 +1,44 @@
-function renderGrid(prompts) {
+const RATINGS_KEY = "promptiaks-ratings";
+
+function loadRatingOverrides() {
+  try {
+    return JSON.parse(localStorage.getItem(RATINGS_KEY)) || {};
+  } catch (err) {
+    return {};
+  }
+}
+
+function saveRatingOverride(id, rating) {
+  try {
+    const overrides = loadRatingOverrides();
+    overrides[id] = rating;
+    localStorage.setItem(RATINGS_KEY, JSON.stringify(overrides));
+  } catch (err) {
+    // localStorage unavailable, rating just won't persist across reloads
+  }
+}
+
+let livePrompts = [];
+
+function initPrompts(prompts) {
+  const overrides = loadRatingOverrides();
+  livePrompts = prompts.map((p) => ({
+    ...p,
+    rating: overrides[p.id] !== undefined ? overrides[p.id] : p.rating || 0,
+  }));
+}
+
+function sortedPrompts() {
+  return [...livePrompts].sort((a, b) => {
+    if (b.rating !== a.rating) return b.rating - a.rating;
+    return a.id - b.id;
+  });
+}
+
+function renderGrid() {
   const grid = document.getElementById("grid");
   const countEl = document.getElementById("count");
-  countEl.textContent = prompts.length;
+  countEl.textContent = livePrompts.length;
 
   const placeholderSVG =
     "data:image/svg+xml;utf8," +
@@ -12,7 +49,9 @@ function renderGrid(prompts) {
       '</svg>'
     );
 
-  grid.innerHTML = prompts
+  const ordered = sortedPrompts();
+
+  grid.innerHTML = ordered
     .map((p, i) => `
       <article class="card" data-id="${p.id}" style="--delay: ${(i % 12) * 45}ms">
         <div class="card-image-wrap">
@@ -21,6 +60,7 @@ function renderGrid(prompts) {
         </div>
         <div class="card-body">
           <h3 class="card-title">${escapeHTML(p.title)}</h3>
+          ${starRow(p)}
           <div class="card-footer">
             <button class="copy-btn" data-id="${p.id}" aria-label="Copiar prompt">
               ${clipboardIcon()}
@@ -33,13 +73,40 @@ function renderGrid(prompts) {
     .join("");
 
   grid.querySelectorAll(".copy-btn").forEach((btn) => {
-    btn.addEventListener("click", () => onCopyClick(btn, prompts));
+    btn.addEventListener("click", () => onCopyClick(btn));
+  });
+
+  grid.querySelectorAll(".stars").forEach((starsEl) => {
+    starsEl.querySelectorAll(".star").forEach((starBtn) => {
+      starBtn.addEventListener("click", () => onStarClick(starsEl, starBtn));
+    });
   });
 }
 
-async function onCopyClick(btn, prompts) {
+function starRow(prompt) {
+  const stars = [1, 2, 3, 4, 5]
+    .map(
+      (v) => `<button type="button" class="star${v <= prompt.rating ? " active" : ""}" data-value="${v}" aria-label="${v} estrellas">${starIcon()}</button>`
+    )
+    .join("");
+  return `<div class="stars" data-id="${prompt.id}">${stars}</div>`;
+}
+
+function onStarClick(starsEl, starBtn) {
+  const id = Number(starsEl.dataset.id);
+  const clickedValue = Number(starBtn.dataset.value);
+  const prompt = livePrompts.find((p) => p.id === id);
+  if (!prompt) return;
+
+  const newRating = prompt.rating === clickedValue ? 0 : clickedValue;
+  prompt.rating = newRating;
+  saveRatingOverride(id, newRating);
+  renderGrid();
+}
+
+async function onCopyClick(btn) {
   const id = Number(btn.dataset.id);
-  const item = prompts.find((p) => p.id === id);
+  const item = livePrompts.find((p) => p.id === id);
   if (!item) return;
 
   try {
@@ -85,10 +152,32 @@ function clipboardIcon() {
   </svg>`;
 }
 
+function starIcon() {
+  return `<svg viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>`;
+}
+
 function escapeHTML(str) {
   const div = document.createElement("div");
   div.textContent = str ?? "";
   return div.innerHTML;
 }
 
-renderGrid(PROMPTS);
+async function onExportClick() {
+  const rated = livePrompts.filter((p) => p.rating > 0);
+  const lines = rated
+    .sort((a, b) => a.id - b.id)
+    .map((p) => `  ${p.id}: ${p.rating}, // ${p.title}`)
+    .join("\n");
+  const payload = `{\n${lines}\n}`;
+
+  try {
+    await navigator.clipboard.writeText(payload);
+  } catch (err) {
+    // ignore, nothing else we can do without clipboard access
+  }
+  showToast();
+}
+
+initPrompts(PROMPTS);
+renderGrid();
+document.getElementById("export-btn").addEventListener("click", onExportClick);
