@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "promptiaks-static",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", ".", "-p", "5566"],
+      "port": 5566
+    }
+  ]
+}
