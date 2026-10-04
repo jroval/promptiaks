@@ -403,9 +403,143 @@ The final image must unmistakably look like a complete traditional illustration 
   {
     id: 39,
     rating: 0,
-    title: "Prompt 39 - (pon aqui el nombre del estilo)",
+    title: "Ilustración Editorial Abstracta",
     image: "images/prompt-39.webp",
-    text: `Pega aqui el texto completo del prompt 39...`
+    text: `Transform the source image into a refined abstract editorial illustration that closely matches the visual language of the provided reference image.
+
+PRESERVE THE SOURCE:
+Preserve the identity and recognizability of every person in the original image as much as this highly stylized visual language allows.
+
+Keep the original number of people, their relative positions, pose, body proportions, interaction, facial orientation, expression, hairstyle, clothing silhouette, accessories and overall composition.
+
+Do not replace the people with generic characters.
+
+IDENTITY PRESERVATION:
+Translate each person’s distinctive characteristics into simplified graphic forms.
+
+Preserve recognizable elements such as:
+- face shape and profile,
+- forehead and jaw proportions,
+- nose shape and direction,
+- eyebrow shape,
+- eye placement,
+- mouth shape and expression,
+- hairstyle, hair length and hair volume,
+- skin tone relationships,
+- body silhouette,
+- distinctive clothing or accessories.
+
+Identity should come from accurate shapes and proportions rather than realistic facial detail.
+
+Do NOT introduce realistic facial rendering in an attempt to preserve identity.
+
+VISUAL STYLE:
+Reinterpret the entire image as an elegant contemporary editorial illustration built from flat organic shapes, layered paper-like forms and minimalist facial features.
+
+Use smooth flowing silhouettes and simplified geometric construction.
+
+Faces should be highly stylized and minimal:
+- simple closed or reduced eyes,
+- minimal eyebrows,
+- a simplified nose,
+- small graphic lips,
+- almost no internal facial detail,
+- no realistic skin rendering.
+
+The people must remain recognizable through their silhouette, proportions, hairstyle and distinctive facial geometry while clearly belonging to this abstract illustration style.
+
+COLOR PALETTE:
+Use a sophisticated muted palette dominated by:
+- dusty rose,
+- muted terracotta,
+- warm peach,
+- ochre and mustard,
+- deep navy blue,
+- desaturated teal,
+- mauve,
+- plum,
+- warm cream,
+- muted beige.
+
+Avoid bright digital colors, neon tones and pure black whenever possible.
+
+SHAPES:
+Construct the illustration from large overlapping organic shapes with gently curved edges.
+
+Hair should become flowing layered masses of color rather than individual strands.
+
+Clothing should become broad simplified color fields with only the essential shapes needed to describe the original garments.
+
+Skin should use large flat areas of warm color with very limited tonal variation.
+
+Do not use conventional realistic shading.
+
+TEXTURE:
+Give the entire illustration a tactile handmade quality inspired by cut and layered art paper.
+
+Add subtle:
+- paper fibers,
+- grain,
+- pigment irregularities,
+- tiny speckles,
+- faded imperfections,
+- softly distressed areas,
+- occasional torn-paper edges,
+- slight differences in texture between overlapping shapes.
+
+The texture should be visible but elegant and restrained.
+
+DEPTH:
+Create depth primarily through overlapping shapes, subtle paper layering and very soft contact shadows between selected layers.
+
+Do not create realistic three-dimensional modelling.
+
+DECORATIVE ELEMENTS:
+Integrate a restrained selection of abstract organic and geometric elements around the composition: circles, semicircles, curved shapes, flowing thin lines, small dots and occasional minimalist botanical forms.
+
+These elements should complement the original composition rather than overwhelm the people.
+
+BACKGROUND:
+Replace the photographic environment with an abstract composition derived from the dominant shapes and colors of the source image.
+
+Use warm cream textured paper as the underlying surface, combined with overlapping muted geometric and organic shapes.
+
+Do not reproduce the original background realistically.
+
+COMPOSITION:
+Preserve the essential spatial relationship, pose and interaction of the people from the original photograph, but reinterpret the surrounding environment freely within this abstract editorial language.
+
+The subjects must remain the clear visual focus.
+
+STRICTLY AVOID:
+photorealism,
+semi-realism,
+realistic portrait painting,
+detailed facial rendering,
+realistic eyes,
+skin pores,
+individual hair strands,
+3D rendering,
+smooth digital gradients,
+glossy surfaces,
+anime,
+comic-book rendering,
+vector-clean perfection,
+watercolor appearance,
+generic cartoon characters,
+excessive facial detail.
+
+CRITICAL STYLE RULE:
+Do not sacrifice the illustration style in an attempt to make the faces more realistic.
+
+Preserve identity through accurate silhouette, facial geometry, hairstyle, proportions, expression and distinctive features, while keeping the actual rendering extremely simplified and graphic.
+
+Every photographic element must be completely translated into this visual language.
+
+FINAL RESULT:
+The finished image should look like a sophisticated contemporary editorial illustration made from layered textured paper and flat organic color shapes, with elegant simplified human figures, minimalist facial features, muted earthy colors, subtle handmade imperfections and abstract decorative elements.
+
+It must clearly evoke the same person or people and the same moment as the source photograph while looking completely illustrated rather than photographic.`
   },
   {
     id: 40,
