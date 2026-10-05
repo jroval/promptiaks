@@ -544,9 +544,89 @@ It must clearly evoke the same person or people and the same moment as the sourc
   {
     id: 40,
     rating: 0,
-    title: "Prompt 40 - (pon aqui el nombre del estilo)",
+    title: "Moda Editorial Retro",
     image: "images/prompt-40.webp",
-    text: `Pega aqui el texto completo del prompt 40...`
+    text: `Transform the source image into a stylized flat editorial fashion illustration, closely following the visual language of the provided reference image.
+PRESERVE THE SOURCE:
+Keep the original person or people clearly recognizable.
+Preserve identity, facial structure, expression, hairstyle, body proportions, pose, hand positions, clothing silhouette, accessories, camera angle, framing and overall composition.
+Do not redesign the subject or replace them with a generic character.
+VISUAL STYLE:
+Reinterpret the photograph as a sophisticated retro-modern editorial illustration made from large flat color shapes and simplified graphic forms.
+The result should feel like a hand-crafted fashion illustration translated into clean graphic color blocking, with a subtle late-1960s / 1970s editorial-pop influence.
+Use:
+
+* large flat areas of solid color,
+* simplified organic silhouettes,
+* very limited internal detail,
+* strong graphic separation between shapes,
+* subtle irregularity along contours so the artwork does not feel mechanically vectorized,
+* sparse, elegant dark linework only where necessary,
+* simplified facial features,
+* expressive almond-shaped eyes,
+* minimal nose construction,
+* clearly defined but simplified lips,
+* large graphic hair masses rather than individual realistic strands,
+* angular and economical shadow shapes,
+* selective pale cream highlights,
+* occasional fine contour lines inside the hair, clothing or face,
+* virtually no gradients.
+
+IDENTITY:
+Preserve recognizability through the exact silhouette and proportions of the original face:
+face shape, forehead, jawline, eyebrow placement, eye position and direction, nose shape, mouth, hairstyle and hair volume.
+Facial features must remain graphic and illustrated rather than realistic.
+Do not attempt to preserve identity by introducing photographic skin, realistic eyes or detailed facial rendering.
+COLOR TREATMENT:
+Use a reduced, carefully controlled palette.
+Favor combinations such as:
+
+* warm coral, salmon or muted peach for skin,
+* deep petrol blue, dark teal, navy or near-black for hair and dark clothing,
+* warm ivory or pale cream for highlights,
+* restrained pink, red or burgundy accents,
+* very pale pastel tones for light clothing.
+
+Colors should be bold but slightly muted, sophisticated and editorial rather than fluorescent.
+SHADING:
+Replace photographic lighting with a small number of clearly separated flat shadow and highlight shapes.
+No smooth airbrushed gradients.
+No realistic skin shading.
+Use graphic coral, mauve, dusty pink, blue-grey or cream shapes to indicate light and volume.
+Introduce thin warm-ivory rim highlights selectively along illuminated contours when appropriate, similar to screen-printed or hand-painted editorial artwork.
+CLOTHING:
+Preserve the design, cut and silhouette of the original wardrobe.
+Translate folds, transparency and fabric volume into simplified overlapping graphic shapes.
+Use only a few strategically placed lines and color patches instead of realistic textile detail.
+HAIR:
+Render hair primarily as one or several large dark flowing shapes.
+Preserve the original hairstyle, length, volume, parting and direction.
+Add only a small number of elegant internal contour strokes.
+Never render individual photorealistic strands.
+BACKGROUND:
+Completely simplify the original environment into a clean, uninterrupted flat-color background.
+Use LIGHT, SOFT, DESATURATED BACKGROUND COLORS such as:
+
+* pale peach,
+* warm blush,
+* powder pink,
+* light apricot,
+* soft sand,
+* warm ivory,
+* pale beige,
+* very light muted blue,
+* soft sage,
+* pale lavender.
+
+Choose whichever light background tone best complements the subject and provides clear separation from the hair, skin and clothing.
+The background must remain completely plain: no scenery, furniture, architecture, gradients, textures, shadows, patterns or decorative objects.
+OVERALL FINISH:
+Elegant editorial fashion illustration, bold flat graphic shapes, minimal detail, sophisticated retro-pop aesthetic, expressive but restrained linework, warm color harmony, slightly imperfect handmade edges, clean composition and strong visual simplicity.
+It should look unmistakably illustrated rather than photographic.
+AVOID:
+photorealism, semi-realistic digital painting, realistic skin texture, pores, realistic eyes, detailed hair strands, 3D rendering, glossy surfaces, complex gradients, heavy texture, watercolor effects, anime aesthetics, cartoon caricature, comic-book cel shading, thick uniform vector outlines, overly perfect geometric vector shapes, excessive facial detail, busy backgrounds or environmental elements.
+FINAL GOAL:
+The final image should preserve the recognizable subject and original composition while appearing as a refined flat-color editorial fashion illustration, with simplified organic forms, a limited sophisticated palette and a completely plain light pastel background similar in visual character to the reference image.`
   },
   {
     id: 41,
