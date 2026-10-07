@@ -43,7 +43,7 @@ function renderGrid() {
   const placeholderSVG =
     "data:image/svg+xml;utf8," +
     encodeURIComponent(
-      '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">' +
+      '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600">' +
       '<rect width="100%" height="100%" fill="#20202a"/>' +
       '<text x="50%" y="50%" fill="#55555f" font-size="18" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">Añade tu imagen</text>' +
       '</svg>'
@@ -55,25 +55,31 @@ function renderGrid() {
     .map((p, i) => `
       <article class="card" data-id="${p.id}" style="--delay: ${(i % 12) * 45}ms">
         <div class="card-image-wrap">
-          <img src="${p.image}" alt="${escapeHTML(p.title)}"
+          <img class="img-bg" src="${p.image}" alt="" aria-hidden="true" loading="lazy"
+               onerror="this.onerror=null;this.src='${placeholderSVG}';">
+          <img class="img-main" src="${p.image}" alt="${escapeHTML(p.title)}" loading="lazy"
+               style="${imageStyle(p)}"
+               onload="fitImage(this)"
                onerror="this.onerror=null;this.src='${placeholderSVG}';">
         </div>
         <div class="card-body">
           <h3 class="card-title">${escapeHTML(p.title)}</h3>
           ${starRow(p)}
-          <div class="card-footer">
-            <button class="copy-btn" data-id="${p.id}" aria-label="Copiar prompt">
-              ${clipboardIcon()}
-              <span>Copiar</span>
-            </button>
-          </div>
+          <div class="card-footer">${footerButton(p)}</div>
         </div>
       </article>
     `)
     .join("");
 
-  grid.querySelectorAll(".copy-btn").forEach((btn) => {
+  grid.querySelectorAll(".copy-btn:not(.options-btn)").forEach((btn) => {
     btn.addEventListener("click", () => onCopyClick(btn));
+  });
+
+  grid.querySelectorAll(".options-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      onOptionsClick(btn);
+    });
   });
 
   grid.querySelectorAll(".stars").forEach((starsEl) => {
@@ -82,6 +88,99 @@ function renderGrid() {
     });
   });
 }
+
+const CARD_RATIO = 2 / 3;
+const FILL_TOLERANCE = 0.25;
+
+function fitImage(img) {
+  if (!img.naturalWidth || !img.naturalHeight) return;
+  const ratio = img.naturalWidth / img.naturalHeight;
+  const closeEnough = Math.abs(ratio - CARD_RATIO) / CARD_RATIO <= FILL_TOLERANCE;
+  img.classList.toggle("fill", closeEnough);
+}
+
+function imageStyle(p) {
+  const rules = [];
+  if (p.imageFit) rules.push(`object-fit:${p.imageFit}`);
+  if (p.imagePosition) rules.push(`object-position:${p.imagePosition}`);
+  return escapeHTML(rules.join(";"));
+}
+
+function footerButton(p) {
+  if (p.options && p.options.length) {
+    return `<button class="copy-btn options-btn" data-id="${p.id}" aria-haspopup="menu" aria-expanded="false">
+      <span>${escapeHTML(p.optionsLabel || "Elegir opción")}</span>
+      ${chevronIcon()}
+    </button>`;
+  }
+  return `<button class="copy-btn" data-id="${p.id}" aria-label="Copiar prompt">
+    ${clipboardIcon()}
+    <span>Copiar</span>
+  </button>`;
+}
+
+function textForOption(prompt, option) {
+  if (option.text) return option.text;
+  return prompt.text.split("{{OPCION}}").join(option.value || option.label);
+}
+
+let openMenu = null;
+
+function closeMenu() {
+  if (!openMenu) return;
+  openMenu.menu.remove();
+  openMenu.btn.setAttribute("aria-expanded", "false");
+  openMenu = null;
+}
+
+function onOptionsClick(btn) {
+  const wasOpenOnThis = openMenu && openMenu.btn === btn;
+  closeMenu();
+  if (wasOpenOnThis) return;
+
+  const prompt = livePrompts.find((p) => p.id === Number(btn.dataset.id));
+  if (!prompt) return;
+
+  const menu = document.createElement("div");
+  menu.className = "menu";
+  menu.setAttribute("role", "menu");
+  menu.innerHTML = prompt.options
+    .map(
+      (o, i) =>
+        `<button type="button" class="menu-item" role="menuitem" data-index="${i}">${escapeHTML(o.label)}</button>`
+    )
+    .join("");
+  document.body.appendChild(menu);
+
+  const r = btn.getBoundingClientRect();
+  const menuH = menu.offsetHeight;
+  const menuW = menu.offsetWidth;
+  const spaceBelow = window.innerHeight - r.bottom;
+  const top = spaceBelow >= menuH + 12 ? r.bottom + 8 : Math.max(8, r.top - menuH - 8);
+  const left = Math.min(Math.max(8, r.right - menuW), window.innerWidth - menuW - 8);
+  menu.style.top = `${top}px`;
+  menu.style.left = `${left}px`;
+
+  btn.setAttribute("aria-expanded", "true");
+  openMenu = { menu, btn };
+
+  menu.querySelectorAll(".menu-item").forEach((item) => {
+    item.addEventListener("click", async (e) => {
+      e.stopPropagation();
+      const option = prompt.options[Number(item.dataset.index)];
+      await copyText(textForOption(prompt, option));
+      closeMenu();
+      showToast();
+    });
+  });
+}
+
+document.addEventListener("click", closeMenu);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeMenu();
+});
+window.addEventListener("resize", closeMenu);
+window.addEventListener("scroll", closeMenu, { passive: true });
 
 function starRow(prompt) {
   const stars = [1, 2, 3, 4, 5]
@@ -109,18 +208,7 @@ async function onCopyClick(btn) {
   const item = livePrompts.find((p) => p.id === id);
   if (!item) return;
 
-  try {
-    await navigator.clipboard.writeText(item.text);
-  } catch (err) {
-    const textarea = document.createElement("textarea");
-    textarea.value = item.text;
-    textarea.style.position = "fixed";
-    textarea.style.opacity = "0";
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-  }
+  await copyText(item.text);
 
   const label = btn.querySelector("span");
   const originalLabel = label.textContent;
@@ -132,6 +220,25 @@ async function onCopyClick(btn) {
     btn.classList.remove("copied");
     label.textContent = originalLabel;
   }, 1500);
+}
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch (err) {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+  }
+}
+
+function chevronIcon() {
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
 }
 
 function showToast() {

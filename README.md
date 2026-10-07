@@ -41,15 +41,53 @@ partir de ese archivo.
 Si en el futuro necesitas más de 50 prompts, copia uno de los bloques
 `{ ... }`, pégalo al final del array (antes del `];`) y súbele el `id`.
 
+## Prompts con varias opciones (por ejemplo, distintos fondos)
+
+Si un prompt tiene una parte que cambia, en lugar del botón "Copiar" la tarjeta
+muestra un botón que despliega la lista de opciones; al elegir una, se copia el
+prompt con esa opción aplicada.
+
+```js
+{
+  id: 41,
+  rating: 0,
+  title: "Mejora de foto",
+  image: "images/prompt-41.webp",
+  optionsLabel: "Elegir fondo",
+  text: `Mejora esta fotografía ... Fondo: {{OPCION}}. ...`,
+  options: [
+    { label: "Estudio gris", value: "estudio gris neutro" },
+    { label: "Playa al atardecer", value: "playa al atardecer" },
+    { label: "Prompt aparte", text: "Texto completo si esta opción no comparte base" }
+  ]
+}
+```
+
+- `text` lleva el prompt base y marca con `{{OPCION}}` el sitio donde entra cada opción.
+- `label` es lo que se ve en el desplegable; `value` es lo que se inserta (si no hay `value`, se usa el `label`).
+- Si una opción necesita un prompt totalmente distinto, usa `text` en esa opción y se copia tal cual.
+- `optionsLabel` es el texto del botón (por defecto "Elegir opción").
+
 ## Crear las imágenes representativas
 
-Para que encajen bien en las tarjetas (que son cuadradas y recortan con
-`object-fit: cover`):
+Las tarjetas tienen formato vertical **2:3**. Cualquier otra proporción (por
+ejemplo las cuadradas 1:1) se muestra entera, sin recortar, con un fondo
+difuminado del propio color de la imagen rellenando el espacio sobrante.
 
-- **Formato**: cuadrado 1:1.
-- **Resolución**: 1000–1200 px de lado es suficiente, no hace falta más.
+- **Formato recomendado**: 2:3 (por ejemplo 1000x1500 px), llena la tarjeta completa.
+- **Resolución**: 1000–1500 px en el lado largo es suficiente; más pesa sin aportar nada.
 - **Archivo**: WEBP (más ligero que JPG con la misma calidad visual).
-- **Encuadre**: sujeto centrado, sin detalles importantes pegados al borde.
+
+### Ajustar el encuadre de una imagen concreta
+
+Si una imagen tiene una proporción muy distinta (por ejemplo, muy alta y con
+mucho espacio vacío) y no queda bien, se puede encuadrar a mano en su entrada de
+`js/prompts.js`, sin tocar el archivo de imagen:
+
+```js
+imageFit: "cover",          // "cover" llena la tarjeta, "contain" la muestra entera
+imagePosition: "50% 39%",   // qué parte se ve: horizontal vertical (0% = arriba/izquierda, 100% = abajo/derecha)
+```
 
 ## Valoración por estrellas y orden de las tarjetas
 

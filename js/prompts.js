@@ -274,6 +274,8 @@ Vector illustration, flat cell shading, color blocks separated by bold lines, no
     rating: 0,
     title: "Comic Neo Pop",
     image: "images/prompt-32.webp",
+    imageFit: "cover",
+    imagePosition: "50% 39%",
     text: `ilustración estilo neo pop contemporáneo de alto impacto, mantener exactamente la composición original, pose, proporciones y encuadre de la imagen, transformar el sujeto en un personaje estilizado con rasgos simplificados y geométricos, líneas limpias tipo vector con contornos definidos, piel suave con degradados sutiles sin textura ni ruido, ojos expresivos con formas marcadas y mirada intensa, cejas angulosas y definidas, labios minimalistas, cabello tratado como masas sólidas con formas gráficas y brillos simplificados, fondo completamente blanco plano sin elementos adicionales, iluminación artificial con sombras duras y estilizadas usando colores neón seleccionados dinámicamente según la imagen para maximizar el contraste, elegir un color dominante y aplicar en sombras un color complementario o altamente contrastante (ejemplo rojo con cian, verde con magenta, azul con naranja), evitar usar siempre verde neón, variar la paleta según el sujeto, mantener coherencia cromática con máximo contraste visual, aplicar acentos neón en sombras y reflejos para crear profundidad, evitar sombras grises o realistas, contraste alto entre luces y sombras con estética gráfica limpia, acabado tipo poster digital sin textura fotográfica sin grano sin realismo, estilo juvenil urbano futurista, composición equilibrada con fuerte impacto visual, alta definición ultra nítida`
   },
   {
@@ -631,9 +633,171 @@ The final image should preserve the recognizable subject and original compositio
   {
     id: 41,
     rating: 0,
-    title: "Prompt 41 - (pon aqui el nombre del estilo)",
+    title: "Portada de Revista",
     image: "images/prompt-41.webp",
-    text: `Pega aqui el texto completo del prompt 41...`
+    optionsLabel: "Elegir fondo",
+    options: [
+      {
+        label: "Blanco",
+        text: `Transform the uploaded photo into a fully produced luxury fashion magazine cover portrait.
+
+Preserve the subject exactly as in the original image: same identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories and framing. Do not reshape, beautify excessively or turn the person into someone else.
+
+Elevate the image into a high-end beauty editorial with professional magazine-level production. Apply refined makeup and beauty retouching: luminous but realistic skin, polished complexion, elegant contouring, defined eyes, refined brows, subtle gloss, controlled highlights and a glamorous editorial finish. Improve the hair with a professionally styled look, better definition, shine and control, while keeping the original hairstyle and identity.
+
+Replace the original background with a seamless white photography studio cyclorama. The background must remain clean, bright and minimal, but it must look like a real studio environment, not a flat digital white backdrop.
+
+The subject must feel physically inside the studio, not cut out and pasted on. Create believable integration through soft contact shadows under and slightly behind the subject, subtle ambient shadowing, realistic bounce light from the white surroundings, delicate edge light wrap, and smooth tonal transitions between subject, floor and background. Keep the white studio slightly dimensional with soft gradients, gentle light falloff and subtle tonal variation so it feels photographic and natural.
+
+Use bright, soft, expensive-looking editorial lighting with controlled highlights, natural shadows, clean whites, premium contrast and a polished beauty-campaign finish. Retouch professionally while preserving real skin texture, pores and natural facial detail. Improve sharpness, fabric detail and overall clarity without making the image look harsh or artificial.
+
+Avoid hard cutout edges, floating appearance, flat pure white fill, visible horizon lines, studio equipment, plastic skin, excessive smoothing, fake HDR, over-sharpening, artificial glow or unnatural facial changes.
+
+Final result: a photorealistic, highly produced, luxury magazine-cover portrait with professional makeup, polished hairstyling, editorial beauty retouching, premium studio lighting and strong realistic integration into a seamless white studio background.
+
+Aspect ratio: 2:3.`
+      },
+      {
+        label: "Microcemento",
+        text: `Transform the uploaded photo into a fully produced high-fashion magazine cover portrait with a refined Vogue-style editorial finish.
+
+Preserve the subject exactly as in the original image: same identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories and framing.
+
+Apply professional beauty makeup, polished hairstyling and premium editorial retouching with luminous but realistic skin, elegant contouring, refined eyes, subtle gloss and natural skin texture.
+
+Replace the original background with a real luxury studio wall finished in warm greige microcement or fine mineral stucco. The surface must show subtle handcrafted texture, delicate tonal variation and realistic imperfections, never a flat digital texture.
+
+Use soft directional editorial lighting that creates natural shadow falloff across the wall and a subtle contact shadow behind the subject. Let the warm wall softly influence the ambient light on skin and clothing so the subject feels physically present in the set.
+
+Keep the composition minimal, sophisticated and expensive-looking, with refined contrast, clean color grading and elegant beauty-campaign lighting.
+
+Avoid flat backgrounds, pasted-on appearance, excessive blur, plastic skin or artificial facial changes.
+
+Final result: a photorealistic luxury fashion editorial portrait with sophisticated Vogue-style production and realistic integration into a textured architectural studio.`
+      },
+      {
+        label: "Molduras",
+        text: `Transform the uploaded photo into a fully produced luxury fashion magazine cover portrait with a sophisticated Vogue-style editorial finish.
+
+Preserve the subject exactly as in the original image: identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories and framing.
+
+Apply professional makeup, polished hairstyling and premium beauty retouching while preserving realistic skin texture and natural facial character.
+
+Replace the original background with an elegant architectural studio wall featuring refined vertical panels and subtle decorative mouldings in soft neutral stone, ivory or warm greige tones.
+
+The panels must have real depth, visible edges and natural shadow separation. Use directional studio lighting so the mouldings cast soft architectural shadows and create dimensional structure behind the subject.
+
+Integrate the figure naturally through contact shadows, realistic bounce light, subtle ambient shading and gentle edge light interaction.
+
+Keep the set restrained and luxurious, with no furniture, props or distracting decoration.
+
+Final result: a photorealistic high-fashion editorial portrait with polished Vogue-style beauty production, elegant architectural depth and premium magazine-cover finish.`
+      },
+      {
+        label: "Terciopelo",
+        text: `Transform the uploaded photo into a glamorous high-fashion magazine cover portrait with a rich Vogue-style editorial finish.
+
+Preserve the subject exactly as in the original image: same identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories and framing.
+
+Apply sophisticated professional makeup, luminous beauty retouching and polished hairstyling while preserving natural skin texture and recognizability.
+
+Replace the original background with large floor-to-ceiling velvet curtains with deep natural folds and realistic fabric texture. Use a luxurious muted tone such as deep burgundy, taupe, smoky brown or dark champagne.
+
+Illuminate the curtains so the folds create soft highlights, deep tonal transitions and elegant shadow depth. The subject must interact naturally with the environment through subtle reflected color, ambient shading and soft directional shadows.
+
+Use refined beauty lighting with controlled highlights on skin, lips and hair, creating a dramatic but elegant luxury-fashion mood.
+
+Avoid theatrical staging or excessive saturation.
+
+Final result: a photorealistic, richly produced Vogue-style fashion portrait with tactile velvet depth, professional beauty lighting and premium editorial finish.`
+      },
+      {
+        label: "Travertino",
+        text: `Transform the uploaded photo into a sophisticated luxury fashion magazine cover portrait with a clean Vogue-style editorial aesthetic.
+
+Preserve the subject exactly as in the source image: identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories and framing.
+
+Apply refined professional makeup, elegant hairstyling and high-end beauty retouching while keeping realistic skin texture and natural facial details.
+
+Replace the original background with large slabs of natural light travertine or premium limestone. Show subtle mineral variation, delicate veins and realistic stone texture without making the background visually busy.
+
+Use soft lateral studio lighting to reveal the stone texture and produce gentle shadows, realistic depth and subtle warm reflected light onto the subject.
+
+Create natural integration through contact shadows, ambient bounce light and realistic edge transitions.
+
+Keep the color palette clean, restrained and luxurious, with sophisticated neutral grading and polished beauty-campaign contrast.
+
+Final result: a photorealistic Vogue-style fashion editorial portrait in a premium architectural stone studio with elegant magazine-cover production.`
+      },
+      {
+        label: "Translúcido",
+        text: `Transform the uploaded photo into a modern high-fashion beauty campaign with a polished Vogue-style editorial finish.
+
+Preserve the subject exactly as in the original image: same identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories and framing.
+
+Apply professional magazine makeup, refined hairstyling and luxury beauty retouching with luminous realistic skin and controlled glossy highlights.
+
+Replace the original background with large translucent architectural panels made from frosted glass, diffusion fabric or softly glowing resin. The panels should be visibly dimensional and illuminated from behind with soft diffused light.
+
+Create subtle brightness variation across the panels, gentle vertical structure and realistic light spill around the subject. The backlighting must interact naturally with the hair, shoulders and silhouette, producing delicate edge illumination without creating halos.
+
+Use elegant frontal beauty lighting to keep the face refined and dimensional.
+
+Final result: a photorealistic, contemporary Vogue-style beauty editorial with luminous architectural depth, premium retouching and sophisticated fashion-campaign lighting.`
+      },
+      {
+        label: "Esquina",
+        text: `Transform the uploaded photo into a refined high-fashion magazine cover portrait with a minimalist Vogue-style editorial finish.
+
+Preserve the subject exactly as in the original image: identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories and framing.
+
+Apply professional beauty makeup, polished hairstyling and premium editorial retouching while maintaining natural skin texture and maximum facial fidelity.
+
+Replace the original background with a minimalist architectural studio consisting of two subtly different wall planes meeting at a clean corner, with a continuous matte floor.
+
+Use warm stone, soft greige or muted ivory tones. The corner must create real spatial depth through soft directional shadows, gentle tonal separation and realistic light falloff.
+
+Ground the subject naturally using contact shadows on the floor and wall, subtle ambient bounce light and believable light interaction.
+
+Keep the composition clean, geometric and sophisticated.
+
+Final result: a photorealistic Vogue-style fashion portrait with minimalist architectural depth, premium beauty production and elegant magazine-cover polish.`
+      },
+      {
+        label: "Madera",
+        text: `Transform the uploaded photo into a luxurious high-fashion editorial portrait with a sophisticated Vogue-style finish.
+
+Preserve the subject exactly as in the original image: same identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories and framing.
+
+Apply refined professional makeup, polished hairstyling and premium beauty retouching while preserving realistic skin texture and facial identity.
+
+Replace the original background with elegant dark wood panels in smoked oak, walnut or deep satin-finished timber. Show subtle natural grain, refined panel joints and restrained reflections.
+
+Use soft directional fashion lighting so the wood catches delicate highlights while maintaining deep tonal richness. Let the warm wood subtly influence the ambient light on the subject for realistic environmental integration.
+
+Create soft contact shadows, natural edge transitions and sophisticated contrast between the subject and background.
+
+Final result: a photorealistic Vogue-style luxury portrait with rich materials, elegant beauty lighting and premium editorial depth.`
+      },
+      {
+        label: "Yeso",
+        text: `Transform the uploaded photo into a highly produced luxury fashion magazine portrait with an artistic Vogue-style editorial finish.
+
+Preserve the subject exactly as in the original image: identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories and framing.
+
+Apply professional beauty makeup, polished hairstyling and refined magazine-level retouching while maintaining realistic skin texture and natural recognizability.
+
+Replace the original background with a minimalist sculptural plaster studio set in warm ivory, chalk, limestone or soft beige tones. Include restrained architectural forms such as shallow arches, curved planes, stepped blocks or subtle reliefs.
+
+The forms must feel physically constructed and professionally lit, with natural shadows, surface texture and realistic spatial depth.
+
+Use directional editorial lighting to create elegant highlights and sculptural shadows across both the set and subject. Integrate the figure through contact shadows, ambient bounce light and smooth tonal interaction.
+
+Keep the design minimal and sophisticated rather than decorative.
+
+Final result: a photorealistic Vogue-style fashion editorial with sculptural architecture, premium beauty production and high-end magazine-cover finish.`
+      }
+    ]
   },
   {
     id: 42,
