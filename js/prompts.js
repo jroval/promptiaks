@@ -802,23 +802,123 @@ Final result: a photorealistic Vogue-style fashion editorial with sculptural arc
   {
     id: 42,
     rating: 0,
-    title: "Prompt 42 - (pon aqui el nombre del estilo)",
+    title: "Arcane Style",
     image: "images/prompt-42.webp",
-    text: `Pega aqui el texto completo del prompt 42...`
+    text: `Transform the reference image into an Arcane-inspired painterly cinematic animated frame, preserving the original subject's identity, facial features, expression, hairstyle, anatomy, body proportions, pose, action, clothing, accessories, framing, perspective, camera angle, and emotional intensity. Do not redesign the subject or alter the composition. Translate the original image into a premium painterly 3D animation aesthetic while maintaining maximum facial recognition and visual fidelity.
+CHARACTER RENDERING:
+Render the subject with a sophisticated combination of hand-painted concept-art textures and dimensional cinematic 3D form. Use stylized yet believable anatomy, expressive eyes that retain their original shape and spacing, defined brows, sculpted facial planes, painterly skin shading, and emotionally rich facial rendering. Preserve distinctive facial proportions rather than replacing them with generic animated character features.
+Render hair in large, carefully sculpted graphic masses with selective strand detail, controlled highlights, and elegant silhouette definition. Clothing and materials should feature painterly textures, illustrated surface details, subtle wear, and handcrafted shading.
+DARK TEXTURED BACKGROUND:
+Replace the original background with a dark, atmospheric, richly textured painterly backdrop specifically designed to separate the subject from the surrounding environment.
+Use a sophisticated combination of deep charcoal, desaturated midnight blue, smoky graphite, and subtle muted violet undertones. Avoid pure black or a uniform solid-color background.
+The background should resemble a dark, hand-painted cinematic environment, incorporating:
+
+* Visible but restrained painterly brushstrokes and layered pigment textures.
+* Subtle distressed plaster, weathered stone, and rough canvas-like surfaces.
+* Irregular tonal variations, atmospheric gradients, and soft organic shadow patterns.
+* Delicate patches of diffused color emerging naturally from the darkness.
+* Fine atmospheric particles, subtle grain, and barely perceptible environmental haze.
+* Soft, abstract architectural or environmental suggestions without introducing recognizable objects or distracting scenery.
+
+Maintain a strong sense of dimensional depth through layered textures, atmospheric perspective, and controlled differences in sharpness. Keep the background deliberately softer and less detailed than the subject.
+SUBJECT–BACKGROUND SEPARATION:
+Create strong cinematic separation between the character and the dark textured background.
+Position a subtle, diffused halo of atmospheric illumination behind the head and upper body, creating a natural tonal transition that gently lifts the silhouette from the darkness. This must not resemble an artificial circular glow, spotlight, or digital vignette.
+Use carefully controlled cool teal-blue or muted violet rim lighting along selected edges of the hair, shoulders, and body, complemented by restrained warm highlights when appropriate.
+Ensure that dark hair and dark clothing remain clearly distinguishable from the background through subtle luminance differences, reflected light, and painterly edge definition.
+The background must remain darker, less saturated, and visually quieter than the subject, while retaining enough visible texture to feel like a real illustrated environment rather than an empty backdrop.
+CINEMATIC LIGHTING AND COLOR:
+Use dramatic, motivated cinematic lighting with sculpted facial illumination, controlled shadows, delicate rim light, subtle bloom, and atmospheric depth.
+Apply a carefully curated color palette with restrained base tones and selective teal, cyan, deep blue, violet, magenta, amber, or crimson accents according to the subject's original visual character.
+Create rich, colorized shadows and focused painterly highlights. Maintain strong local contrast around the face and eyes, gradually reducing contrast and detail toward the background.
+The subject should remain the brightest and most visually defined element, with particular emphasis on facial features, expression, and silhouette.
+FINAL ART DIRECTION:
+The result must look like a premium cinematic frame from the visual world of Arcane: painterly, dimensional, atmospheric, emotionally expressive, and meticulously art-directed.
+Prioritize accurate facial identity, sophisticated painted surfaces, dramatic lighting, and a dark textured background that enhances the subject without competing for attention.
+Avoid flat black backgrounds, plain studio backdrops, smooth digital gradients, excessive fog, artificial neon outlines, distracting environmental objects, oversaturated colors, generic CGI, anime aesthetics, Disney or Pixar proportions, flat cel shading, and photorealistic live-action rendering.
+The final image must feel like the original subject translated into a handcrafted cinematic animated painting, emerging naturally from a richly textured dark environment with exceptional depth, contrast, and visual separation.`
   },
   {
     id: 43,
     rating: 0,
-    title: "Prompt 43 - (pon aqui el nombre del estilo)",
+    title: "Anime Pop 90s",
     image: "images/prompt-43.webp",
-    text: `Pega aqui el texto completo del prompt 43...`
+    text: `Use the provided input image as the core identity and subject reference, then fully reinterpret it through a Retro 90s Anime Pop Pin-Up visual language. Preserve the subject’s recognizable identity, defining facial characteristics, hairstyle cues, body type, key wardrobe concept, and overall personality, but do not remain locked to the original photographic pose, camera angle, framing, lighting, or realistic anatomy. Rebuild the entire image so it feels natively illustrated as a polished late-1980s to 1990s Japanese anime character artwork, combining expressive cel animation, glossy pop character design, playful fashion posing, clean ink contours, vibrant pastel color, and classic hand-painted animation shading. The result should feel like an original cel-animated character illustration, not a photograph with an anime filter.
+
+Recompose the subject into a dynamic three-quarter upper-body or waist-up pose, viewed from a slightly low or eye-level camera angle. If the source pose is neutral, change it into a more animated character pose with the arms raised, bent, crossed behind or above the head, or otherwise arranged to create a clear energetic silhouette. Introduce a gentle hip shift, slight torso twist, lifted shoulders, and a subtle arch through the spine so the figure feels lively and playful rather than static. Favor a composition where the head and torso occupy most of the frame with minimal empty space around the subject.
+
+Preserve the person’s recognizable identity while translating the face into classic mature 90s anime proportions. Slightly enlarge the eyes while keeping their original shape and personality recognizable. Use large irises, crisp dark pupils, bright white catchlights, thick upper lash lines, fine lower lashes, and simplified eyelid construction. Keep the nose small and graphic, described through one or two clean lines and a tiny shadow shape. Simplify the mouth into a confident expressive form, optionally with a broad smile, visible teeth, or a playful half-open expression depending on the source. Maintain the subject’s individual facial identity through the relationship between the eyes, brows, cheek shape, jawline, mouth, hairstyle, and overall expression.
+
+Push the expression toward cheerful, charismatic, energetic, mischievous, and highly animated. The eyes should feel bright and alert, the brows expressive, and the smile naturally integrated into the face. If the source has a more serious personality, preserve that attitude while still using the same clean expressive anime facial language. Avoid generic kawaii expressions or childlike proportions. The character should feel like a confident adult anime lead or pop-fashion character.
+
+Treat the hair as a major graphic element. Preserve the source hairstyle and general color identity where possible, but reinterpret it using large clean anime hair masses, grouped locks, curved spikes, and sculpted strand clusters. Use only a limited number of internal hair lines. Create glossy cel-style highlights using large pale shapes rather than realistic strand reflections. If the original hair is tied back, use a high ponytail, bun, ribbon, bow, or similarly graphic silhouette only when appropriate to the source. Let selected loose strands project outward to create movement.
+
+Render the entire illustration with clean, confident dark ink linework. Use medium-thick outer contours around the hair, face, arms, torso, clothing, and major silhouette, while using thinner internal lines for facial features, folds, fingers, hair divisions, and small accessories. Keep contours smooth and intentional, but allow subtle hand-drawn variation so the image does not feel like sterile modern vector art. Use dark navy, deep brown, or near-black linework instead of pure digital black when it produces a more authentic cel-animation feel.
+
+Use a bright, clean retro anime palette with aqua, turquoise, cyan, sky blue, warm peach, blush pink, dusty rose, coral red, cream, white, soft lavender, and small deep navy accents. Keep colors saturated but slightly softened by a vintage animation sensibility rather than hyper-neon digital saturation. Skin should use warm peach or light beige base tones with rosy cheek accents, while shadows can shift into warm mauve, muted violet, or slightly reddish brown.
+
+Apply traditional two-to-three-tone cel shading across the face, hair, body, and clothing. Use large clearly defined shadow shapes rather than smooth realistic gradients. Place shadows beneath the chin, around the neck, under the arms, beneath the chest or clothing overlaps, along the side of the torso, around the waist, and inside hair masses. Keep shading highly readable and graphic. Add small secondary highlight shapes on the shoulders, cheekbones, hair, and selected skin areas to create the polished hand-painted animation look.
+
+Use soft, selective airbrushed blush and warm facial color on the cheeks, nose, shoulders, and other exposed skin, but keep it subtle. The blush should integrate with the cel shading rather than becoming photographic. Add tiny glossy highlights to the eyes, lips, and skin only where useful. Avoid realistic skin texture, pores, freckles, or micro-detail unless they are a defining identity feature and can be simplified into small graphic marks.
+
+Translate the body into idealized but believable anime anatomy. Preserve the source body type, but simplify muscle and skin structure into smooth clean forms. Slightly elongate the torso, arms, or waist if it helps achieve the elegant 90s animation silhouette. Keep shoulders, waist, hips, and limbs visually clear through strong contours and cel-shaded planes. Avoid extreme distortion or exaggerated contemporary manga anatomy. The goal is classic commercial anime character design.
+
+Treat hands carefully as clean stylized anime hands with simplified fingers, clear knuckle placement, and graceful gesture. If the pose brings hands close to the head or hair, make them a visible part of the composition. Fingers should be slightly tapered and elegant, with minimal internal linework.
+
+Preserve the original wardrobe concept, but simplify it into clean retro anime fashion shapes. Use large flat color areas, bold graphic seams, short folds, and selective shadow blocks. Cropped tops, shirts, jackets, casual fashion, or sports-inspired clothing can be adapted naturally from the source. Remove unnecessary realistic fabric texture, stitching, fine patterns, or material micro-detail. If the original clothing includes text or logos, do not invent new readable wording; either simplify them into an abstract graphic mark or keep the area clean unless exact text preservation is specifically required.
+
+Use clothing folds sparingly. Describe form through a few bold crease lines at the sleeves, waist, chest, elbows, and garment edges. Create highlights with small cream or pale colored shapes instead of realistic fabric reflections. Keep clothing visually secondary to the face, hair, and pose.
+
+Set the character against a very simple clean pastel background, preferably pale aqua, light cyan, soft sky blue, warm off-white, or a minimal vertical gradient between two closely related tones. Keep the background completely free of realistic environment details. No furniture, architecture, scenery, or depth-of-field elements should compete with the subject. The background should function like a classic character illustration plate or animation promotional artwork.
+
+Introduce a subtle hand-painted cel and vintage print softness across the final artwork. Edges should remain clean but not digitally over-sharpened. Add extremely light paper grain, faint color noise, tiny analog imperfections, and slightly softened color transitions so the image feels scanned from traditional animation artwork or an older printed character illustration. Keep this texture restrained.
+
+Lighting should remain bright, simple, and animation-driven rather than cinematic. Use an implied upper-side light source to create readable cel shadow placement, but avoid complex bounce light, volumetric effects, dramatic rim lighting, lens flare, or HDR. The image should feel cheerful, graphic, clean, and instantly readable.
+
+Maintain a strong silhouette and high visual clarity. The raised arms, hair shape, head angle, torso curve, and clothing edges should all be readable even at small size. Use asymmetry in the pose to create energy while keeping the composition balanced. The overall mood should feel playful, nostalgic, confident, youthful, polished, and charismatic.
+
+The final result should feel authentically retro anime, pop-oriented, energetic, fashionable, expressive, cleanly cel-shaded, and hand-illustrated, combining classic 90s Japanese animation character design, promotional anime artwork, polished ink drawing, bright fashion color, and playful editorial posing into one cohesive visual system.
+
+Avoid photorealism, realistic skin texture, glossy 3D rendering, modern ultra-polished anime gradients, painterly concept art, soft watercolor, chibi proportions, childlike anatomy, oversized kawaii eyes, generic contemporary AI anime faces, thick western comic outlines, hyper-detailed hair strands, cinematic darkness, realistic studio backgrounds, HDR, photographic bokeh, heavy grain, vector-flat corporate illustration, overly complex shadows, or sterile digital perfection. The final image must remain cleanly inked, cel-shaded, colorful, expressive, pose-driven, nostalgic, and unmistakably inspired by polished 80s-90s anime character illustration.`
   },
   {
     id: 44,
     rating: 0,
-    title: "Prompt 44 - (pon aqui el nombre del estilo)",
+    title: "Retrato Graphic Noir",
     image: "images/prompt-44.webp",
-    text: `Pega aqui el texto completo del prompt 44...`
+    text: `Use the provided input image as the core subject and identity reference, then fully reinterpret it through a Graphic Noir Anime Editorial visual language. Preserve the subject’s recognizable identity, defining facial structure, hairstyle cues, body proportions, wardrobe concept, and overall personality, but do not remain locked to the original photographic pose, framing, camera angle, or lighting. Reconstruct the entire image so it feels natively illustrated as a bold contemporary character portrait, combining mature anime-inspired facial design, graphic novel linework, fashion editorial posing, simplified painterly cel shading, and a dark restrained color palette. The result should feel like an intentionally art-directed illustration, not a photograph with a cartoon filter applied.
+
+Recompose the subject into a tight upper-body portrait with a slightly low camera angle, allowing the torso, shoulders, neck, and head to dominate the frame. Push the camera subtly upward toward the face so the subject feels confident, stylish, and visually commanding. If the source pose is neutral, transform it into a more expressive editorial pose with the head tilted backward or slightly to one side, the chin raised, shoulders angled, and the upper body forming a strong diagonal through the frame. Use mild perspective exaggeration so the neck, jawline, and upper torso feel elongated and graphic without becoming distorted.
+
+Maintain a close, intimate crop. Let portions of the hair, shoulders, or torso extend beyond the frame naturally. Avoid excessive negative space. The composition should feel immediate and fashion-led, with the subject occupying most of the canvas. Use asymmetry in the head tilt, hair placement, shoulder line, and facial angle to make the portrait feel alive and slightly rebellious rather than perfectly centered or static.
+
+Translate the face into a mature anime and graphic-novel hybrid, preserving the recognizable identity while simplifying anatomy into clean sculptural planes. Keep the eyes slightly stylized and elongated, but not oversized or cute. Use strong upper eyelids, restrained lashes, clear brows, simplified nose geometry, and a compact expressive mouth. Preserve the subject’s original eye shape, brow position, nose character, jawline, and lip proportions as much as possible within the stylized framework. The face should feel adult, confident, sensual in attitude, and editorial rather than youthful, comedic, or exaggerated.
+
+If the expression in the source image is neutral, introduce a more self-assured, detached, or slightly defiant expression. The eyes may be half-lidded, looking toward the viewer, or angled slightly off camera. The lips can be gently parted or held in a relaxed confident shape. Keep the expression understated. The visual attitude should come primarily from head position, eye direction, and posture rather than extreme facial emotion.
+
+Render the portrait using bold, loose black ink linework with visible variation in line weight. Use thick confident outer contours around the hair, jaw, neck, shoulders, clothing, and silhouette, while using finer sketchier lines around the eyes, nose, lips, collarbone, folds, and internal structure. Allow some contours to break, overlap, or become slightly rough so the artwork retains energy. Avoid perfectly clean vector outlines. The linework should feel hand-drawn, editorial, and expressive.
+
+Treat the hair as one of the strongest graphic elements. Preserve the subject’s recognizable hairstyle, but simplify it into large dark masses with loose angular strands and selectively exaggerated movement. Use deep black, blue-black, dark charcoal, or near-black teal for the main hair mass. Add only a few cool gray, desaturated blue, or faint warm highlights to describe volume. Do not render individual hairs realistically. Let several strands cross the face or fall asymmetrically to create depth and attitude.
+
+Use a restrained palette built primarily from black, charcoal, muted gray-green, dusty teal, warm beige, desaturated peach, deep red, dark burgundy, and occasional warm orange highlights. Avoid bright rainbow color. Skin should remain warm but stylized through simplified planes rather than realistic complexion rendering. Clothing and hair should be much darker than the skin so the figure reads clearly against the subdued background.
+
+Build the skin using broad painterly cel-shaded planes. Use warm peach and beige base tones, muted taupe or gray-brown shadows, and sparing pale highlights. Do not use smooth airbrushed gradients. Instead, divide the face, neck, shoulders, and torso into large simplified regions of light, midtone, and shadow. Allow the brush edges to remain slightly rough and visibly illustrated. Add selective harder shadow planes beneath the jaw, under the hair, around the nose, beneath the lower lip, along the neck, under the collarbone, and where the body turns away from the light.
+
+Use lighting that feels directional and graphic rather than photographic. Favor a strong key light from one side or slightly from below/side, creating warm skin highlights and deep shadow areas. Introduce a subtle warm rim or edge accent along selected portions of the neck, shoulder, hair, or torso, using muted orange or red. Keep the opposite side in deeper cool shadow. The final lighting should feel moody, editorial, and slightly cinematic while still remaining fundamentally illustrated.
+
+Preserve the source wardrobe concept, but simplify garments into strong geometric shapes. Use black, charcoal, muted red, cream, or dark gray as the dominant clothing colors. Reduce folds and material texture into broad planar shadows and selective highlight strokes. If the source contains fitted or minimal fashion styling, keep the silhouette recognizable but translate it into clean illustrated forms. Avoid realistic fabric simulation, fine stitching, microtexture, and glossy material rendering unless a small highlight is needed for form.
+
+Use the body as a strong graphic silhouette. Simplify anatomy while keeping believable adult proportions. Emphasize long neck lines, shoulder angles, collarbones, and the rhythm of the torso through a few confident strokes and tonal blocks. Avoid hyper-detailed muscles, realistic pores, or excessive anatomical rendering. The figure should read immediately through silhouette and shape design.
+
+Set the subject against a simple muted flat or softly textured background, preferably dusty teal, gray-green, blue-gray, charcoal, or another subdued cool tone. Keep environmental detail minimal or remove it entirely unless it is essential to the original image. The background should function primarily as a quiet color field that separates the dark hair and clothing from the skin. Add only faint painterly texture, subtle grain, or minimal tonal variation.
+
+Introduce a subtle rough digital-paint and ink texture throughout the illustration. Use visible brush seams, tiny line overlaps, selective sketch marks, dry brush fragments, mild pigment roughness, and restrained canvas or paper grain. The image should feel handmade and painterly rather than pristine. Keep the surface polished enough for fashion editorial use while retaining visible artistic construction.
+
+Avoid overly smooth anime cel shading. The rendering should sit between clean stylized animation and loose concept-art painting. Some edges can remain crisp, particularly around the silhouette, eyes, lips, and clothing boundaries, while other areas should break into looser brushwork. This mixture of sharp graphic edges and rough painterly treatment is essential to the visual identity.
+
+The final image should feel mature, moody, fashionable, confident, rebellious, graphic, intimate, and contemporary. It should combine adult anime character design, expressive ink illustration, fashion campaign posing, restrained concept-art brushwork, low-angle portraiture, and dark editorial color grading into one cohesive visual system. The pose, camera perspective, expression, hair movement, linework, tonal simplification, and lighting should all contribute to the same confident illustrated attitude.
+
+Avoid photorealism, glossy 3D rendering, cute anime proportions, oversized kawaii eyes, chibi anatomy, bright multicolor palettes, smooth vector art, clean corporate illustration, painterly realism, airbrushed skin, hyper-detailed pores, realistic hair strands, soft beauty lighting, HDR, cinematic bokeh, highly detailed backgrounds, symmetrical passport framing, stiff neutral poses, overly polished cel shading, or generic AI character art. The finished image must remain boldly inked, painterly, slightly rough, fashion-forward, low-angle, dark-toned, asymmetrical, and unmistakably graphic.`
   },
   {
     id: 45,
