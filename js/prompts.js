@@ -923,16 +923,28 @@ Avoid photorealism, glossy 3D rendering, cute anime proportions, oversized kawai
   {
     id: 45,
     rating: 0,
-    title: "Prompt 45 - (pon aqui el nombre del estilo)",
+    title: "Barroco",
     image: "images/prompt-45.webp",
-    text: `Pega aqui el texto completo del prompt 45...`
+    text: `Transform the photograph into an authentic 17th-century Spanish Baroque oil painting, fully repainting the image in traditional oil-on-canvas style while preserving the subject exactly. Do not alter the face, facial structure, expression, hairstyle, hair color, pose, body position, hand placement, clothing, or accessories. Keep the original composition and proportions unchanged, translating them faithfully into a painted form. Use controlled visible brushwork, delicate glazing, subtle canvas texture, softened edges, and naturalistic anatomical modeling. Apply strong chiaroscuro, directional natural light, deep atmospheric shadow, and a restrained palette of umber, ochre, muted olive, charcoal, and warm ivory. Render skin with painterly realism, nuanced flesh tones, and gentle tonal transitions. Treat the background as a subdued, dark Baroque interior with minimal distractions and atmospheric depth. Avoid photographic sharpness, modern stylization, or digital effects.`
   },
   {
     id: 46,
     rating: 0,
-    title: "Prompt 46 - (pon aqui el nombre del estilo)",
+    title: "90 Retro Anime",
     image: "images/prompt-46.webp",
-    text: `Pega aqui el texto completo del prompt 46...`
+    text: `Transform the source photograph into a fully hand-drawn 2D retro 1990s anime illustration with sleek, stylized character design.
+
+Use clean black ink outlines, subtle line-weight variation, expressive almond-shaped eyes, simplified facial anatomy, and elegant, elongated proportions with slender feminine silhouettes.
+
+Apply rich, saturated flat colors, sharp two-tone cel shading, bold geometric shadow shapes, and crisp angular highlights. Define volume through graphic color blocks rather than realistic gradients.
+
+Add consistent, fine vintage print grain across the entire artwork, including skin, clothing, and background.
+
+Preserve the subject’s recognizable facial identity, original hairstyle, hair color, expression, pose, and clothing, while artistically reinterpreting facial features and body proportions to fully match the anime aesthetic.
+
+Use a simple, solid-colored background that contrasts with the character, with subtle grain texture.
+
+Avoid photorealism, soft airbrushing, painterly textures, 3D rendering, text, and watermarks.`
   },
   {
     id: 47,
