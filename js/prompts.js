@@ -949,9 +949,44 @@ Avoid photorealism, soft airbrushing, painterly textures, 3D rendering, text, an
   {
     id: 47,
     rating: 0,
-    title: "Prompt 47 - (pon aqui el nombre del estilo)",
+    title: "Fashion Comic",
     image: "images/prompt-47.webp",
-    text: `Pega aqui el texto completo del prompt 47...`
+    text: `Transform the provided photograph into a high-end stylized digital fashion illustration, faithfully recreating the distinctive visual language of the reference artwork: expressive hand-drawn comic linework, exaggerated fashion proportions, angular painterly shading, and a refined yet intentionally imperfect sketch aesthetic.
+
+FACIAL RECOGNIZABILITY — ARTISTIC INTERPRETATION
+Use the original person's face as the foundation for a fully illustrated character design. The goal is recognizable resemblance, not exact facial replication.
+Preserve the distinctive combination of facial characteristics that makes the person identifiable: face shape, eye spacing, eyebrow structure, nose silhouette, lip shape, jawline, hairstyle, and characteristic expression.
+Freely reinterpret these features through the reference's stylized visual language: simplified facial geometry, elongated contours, expressive eyes, sculpted cheekbones, angular shadows, and graphic lips.
+The face must look genuinely hand-illustrated and stylistically consistent with the entire character. Do not preserve photographic facial textures, realistic skin rendering, or exact anatomical proportions. Avoid generic beautiful faces that lose the original person's recognizable character.
+
+CHARACTER DESIGN & PROPORTIONS
+Reconstruct the subject as a striking contemporary fashion-comic character. Allow deliberate artistic exaggeration of the anatomy: elongated limbs, a defined waist, expressive curves, stylized body volumes, and a dynamic, visually appealing silhouette.
+Adapt proportions to the subject's original appearance and gender rather than applying identical anatomy to everyone.
+The original pose, clothing, and composition may be creatively adjusted whenever necessary to achieve a more authentic illustration. Reinterpret clothing with fashionable silhouettes, simplified fabric construction, and exaggerated angular folds while retaining recognizable elements of the original outfit.
+Prioritize artistic coherence over photographic accuracy.
+
+DRAWING & LINEWORK
+Use expressive black and dark-charcoal ink outlines with organic variations in thickness. Combine confident silhouette contours with loose secondary sketch lines, overlapping strokes, interrupted edges, and subtle construction marks.
+Introduce delicate white hand-drawn highlight strokes across selected areas of the hair, clothing, and body.
+The illustration must retain a spontaneous, slightly unfinished hand-drawn quality rather than perfectly clean vector edges.
+
+COLORING & SHADING
+Apply a sophisticated mixture of graphic cel shading and soft digital painting.
+Build volume through broad, irregular polygonal shadow shapes combined with selective smooth gradients. Use clearly defined angular shadows across facial planes, skin, clothing folds, and hair.
+Render skin with smooth warm tones, peach highlights, muted brown shadows, and subtle dimensional modeling. Avoid photographic skin texture.
+Illustrate hair as flowing, sculpted graphic masses with dark contours, layered tonal sections, sharp tapered strands, and restrained highlights.
+Use a harmonious, slightly desaturated editorial color palette, preserving the essential color identity of the original subject.
+
+BACKGROUND & COMPOSITION
+Replace the original environment with a minimalist off-white background featuring extremely subtle pale-gray abstract shapes, faint sketch marks, and barely visible paper-like texture.
+Create a strong, character-focused fashion illustration with confident posing, balanced negative space, and a visually expressive composition.
+
+FINAL ART DIRECTION
+The finished image must look like an original piece of premium contemporary fashion-comic artwork, not a photograph processed with an illustration filter.
+Maintain the reference's distinctive balance of exaggerated anatomy, simplified recognizable facial features, loose ink contours, angular painterly shadows, soft color transitions, and spontaneous white sketch highlights.
+Essential priority: recognize the original person through their stylized facial features while allowing the entire character, anatomy, clothing, and composition to be artistically reconstructed to match the reference style.
+Avoid photorealism, hyperrealistic faces, generic anime aesthetics, 3D rendering, plastic-looking skin, overly polished vector graphics, excessive gradients, and anatomically rigid photographic reproduction.
+Output: Premium 2D digital illustration, portrait orientation, 2:3 aspect ratio, high resolution, expressive hand-drawn finish.`
   },
   {
     id: 48,
