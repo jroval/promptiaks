@@ -991,9 +991,12 @@ Output: Premium 2D digital illustration, portrait orientation, 2:3 aspect ratio,
   {
     id: 48,
     rating: 0,
-    title: "Prompt 48 - (pon aqui el nombre del estilo)",
+    title: "Chic Cartoon",
     image: "images/prompt-48.webp",
-    text: `Pega aqui el texto completo del prompt 48...`
+    text: `Transform the provided photograph into a stylized 2D digital fashion illustration with a chic, feminine cartoon aesthetic. Use slender, elongated proportions, a narrow waist, graceful curves, long legs, and elegant simplified anatomy.
+Preserve the original face with high fidelity, maintaining its distinctive facial structure, proportions, eye shape, nose, lips, jawline, expression, and recognizable identity. Stylize the face through illustration techniques without redesigning or exaggerating it. Keep the original hairstyle, hair color, pose, and visible clothing unchanged.
+If the original image is cropped and the footwear is not visible, invent appropriate shoes that match the outfit naturally and coherently in style, color, and mood. Complete the lower body convincingly when needed.
+Apply clean, slightly varied outlines, smooth shapes, flat color blocking, subtle cel shading, selective painterly highlights, and delicate grain. Use a pure white background only, with faint grounding shadows. Avoid photorealism, generic cartoon faces, and 3D rendering.`
   },
   {
     id: 49,
