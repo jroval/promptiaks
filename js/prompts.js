@@ -366,16 +366,10 @@ CRITICAL: Preserve the original person, clothing and pose; add only the Poké Ba
     rating: 0,
     title: "Rotulador con Fondo Abstracto",
     image: "images/prompt-37.webp",
-    text: `Transform the person in the image into a hand-drawn black-ink and alcohol-marker illustration, preserving their identity with maximum fidelity: same facial features, facial proportions, expression, hairstyle, body shape, body proportions, pose, posture, clothing, accessories, tattoos and all visible distinctive details.
-Do not beautify, exaggerate, slim, enlarge, reshape or reinterpret the person. Only change the artistic medium.
-Render the subject as if it were first drawn by hand with black ink and then manually colored with alcohol markers on paper.
-Use strong black outer contours, thinner expressive interior lines, slightly irregular handmade linework, visible broad marker strokes, overlapping passes, slight variations in saturation and clearly visible stroke direction. Use mostly flat color areas with only 2–3 marker tones for shading. Avoid smooth digital gradients.
-Keep the subject sharp, detailed and visually dominant.
-Replace the original background with an abstract marker interpretation clearly inspired by the original environment. Preserve the original background's main colors, light direction, atmosphere, spatial distribution and most recognizable shapes, but simplify them into broad marker strokes, soft geometric forms, loose color blocks and reduced-detail silhouettes.
-The abstract background should immediately evoke the original location without reproducing it literally. Keep only the essential visual cues of the original scene and remove unnecessary detail.
-Use softer edges, fewer black outlines and lower contrast in the background so the subject remains the clear focal point. The background should feel intentionally artistic and simplified, not empty or random.
-The entire background must remain in the same hand-drawn alcohol-marker style, with visible marker texture, overlapping strokes and natural handmade irregularities. Do not introduce photographic elements, digital blur, realistic bokeh, gradients or painterly effects.
-The final result must feel like a traditional black-ink and alcohol-marker portrait, with a detailed subject against an abstract marker-rendered background that clearly references the colors, shapes and atmosphere of the original setting.`
+    text: `Transform the person into a hand-drawn black-ink and alcohol-marker illustration, preserving their exact identity, facial features, expression, hairstyle, body proportions, pose, clothing, accessories, tattoos and all visible details. Do not beautify or reinterpret the person.
+Draw the subject with strong black contours, finer interior ink lines and slightly irregular handmade linework. Color with alcohol markers using visible strokes, overlapping layers, subtle saturation variation and 2–3 tones per area for simple shading. Use vibrant, naturally saturated colors and avoid smooth digital gradients.
+Replace the background with loose abstract alcohol-marker patches inspired by the original scene’s colors and lighting, but without recognizable objects or scenery. Use irregular overlapping strokes, soft organic shapes, lightly suggested forms and some untouched white areas. Keep the background softer, simpler and lower contrast than the subject so the person remains the clear focus.
+Final result: a vibrant traditional ink-and-marker illustration with visible handmade texture, strong likeness and an abstract marker-colored background that suggests the original atmosphere without reproducing it literally.`
   },
   {
     id: 38,
@@ -1001,15 +995,21 @@ Apply clean, slightly varied outlines, smooth shapes, flat color blocking, subtl
   {
     id: 49,
     rating: 0,
-    title: "Prompt 49 - (pon aqui el nombre del estilo)",
+    title: "Colored Pencil",
     image: "images/prompt-49.webp",
-    text: `Pega aqui el texto completo del prompt 49...`
+    text: `Transform the uploaded photograph into a vibrant, semi-realistic hand-drawn colored pencil illustration. Strictly preserve the person's facial identity, features, expression, hairstyle, body proportions, pose and original clothing. Change only the artistic rendering.
+
+Use delicate graphite outlines, fine pencil strokes, visible crosshatching and richly layered colored pencil shading. Apply vivid, naturally saturated colors, warm luminous skin tones, rich shadows and subtle highlights. Maintain accurate anatomy, detailed facial features and authentic dry-pencil texture. Avoid muted, faded, washed-out or pastel colors, markers, watercolor and digital airbrushing.
+
+Replace the original background with loose, abstract patches of colored pencil shading inspired by the original scene's dominant colors and lighting, without reproducing recognizable objects or scenery. Use irregular overlapping strokes, organic shapes, soft feathered edges and occasional untouched paper areas. Keep the background colorful, atmospheric, minimal and less detailed than the subject.
+
+The final result must resemble a professionally hand-drawn colored pencil illustration with strong facial likeness, vibrant pigmentation, visible pencil texture and a softly abstract background. No notebook, spiral binding, frames or photorealistic elements.`
   },
   {
     id: 50,
     rating: 0,
-    title: "Prompt 50 - (pon aqui el nombre del estilo)",
+    title: "Acuarela",
     image: "images/prompt-50.webp",
-    text: `Pega aqui el texto completo del prompt 50...`
+    text: `Transform the original photograph into a delicate, hand-painted watercolor illustration on fine white watercolor paper. Recreate the subject using translucent pigment washes, layered earthy tones, soft color bleeding, irregular brush edges, and subtle granulated textures. Combine loose organic watercolor shapes with selective dry-brush strokes and fine pencil detailing to define the face, hair, fur, clothing, and natural textures. Preserve the subject’s recognizable identity, distinctive features, expression, hairstyle, original colors, proportions, and pose. Use warm, muted pigments, gentle tonal transitions, selective dark accents, and carefully preserved white highlights. Concentrate the richest detail around the face and eyes, allowing some lower edges to dissolve into unfinished brushstrokes and exposed paper. Place the subject against a minimal black-and-white background with very simple abstract shapes or soft monochrome washes, kept understated and uncluttered so the figure stands out clearly.`
   }
 ];
