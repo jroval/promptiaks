@@ -271,6 +271,12 @@ body {
   color: #ffc94d;
 }
 
+/* 6th star: red, limited to a few cards */
+.star-top.active,
+.stars .star-top:hover {
+  color: #ff4d5e;
+}
+
 .card-footer {
   margin-top: auto;
   display: flex;

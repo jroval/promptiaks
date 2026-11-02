@@ -7,7 +7,7 @@ con una imagen representativa por prompt y un botón para copiarlo al portapapel
 
 Todo el contenido vive en un único archivo: [`js/prompts.js`](js/prompts.js).
 
-Ya tiene **50 huecos preparados** (`id` 1 a 50) aunque de momento solo uses
+Ya tiene **60 huecos preparados** (`id` 1 a 60) aunque de momento solo uses
 38 — así tienes sitio de sobra para ir añadiendo nuevos sin tocar la
 estructura. Los que no rellenes se quedan como placeholder y no rompen nada;
 puedes borrarlos si quieres, o dejarlos para más adelante.
@@ -32,7 +32,7 @@ Para cada prompt:
    indica `image` (por ejemplo `images/prompt-01.webp`). El formato usado es
    **WEBP cuadrado (1:1)**, ver recomendación más abajo.
 
-`rating` es la puntuación por defecto (0 a 5 estrellas) que ve cualquiera que
+`rating` es la puntuación por defecto (0 a 6 estrellas) que ve cualquiera que
 entre a la web por primera vez — más abajo se explica cómo funciona.
 
 No necesitas tocar `index.html`, `app.js` ni el CSS — la web se genera sola a
@@ -91,8 +91,9 @@ imagePosition: "50% 39%",   // qué parte se ve: horizontal vertical (0% = arrib
 
 ## Valoración por estrellas y orden de las tarjetas
 
-Cada tarjeta tiene un selector de 1 a 5 estrellas. Las tarjetas se reordenan
-automáticamente de mayor a menor puntuación — las de 5 estrellas suben
+Cada tarjeta tiene un selector de 1 a 6 estrellas. La sexta es roja y solo
+pueden tenerla 5 prompts a la vez. Las tarjetas se reordenan
+automáticamente de mayor a menor puntuación — las de 6 estrellas suben
 arriba del todo, las de 0 se quedan abajo.
 
 Como esta web es estática (sin servidor ni base de datos), las estrellas que

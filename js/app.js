@@ -182,10 +182,13 @@ document.addEventListener("keydown", (e) => {
 window.addEventListener("resize", closeMenu);
 window.addEventListener("scroll", closeMenu, { passive: true });
 
+// The 6th (red) star is reserved for a handful of favourites
+const MAX_TOP_RATED = 5;
+
 function starRow(prompt) {
-  const stars = [1, 2, 3, 4, 5]
+  const stars = [1, 2, 3, 4, 5, 6]
     .map(
-      (v) => `<button type="button" class="star${v <= prompt.rating ? " active" : ""}" data-value="${v}" aria-label="${v} estrellas">${starIcon()}</button>`
+      (v) => `<button type="button" class="star${v === 6 ? " star-top" : ""}${v <= prompt.rating ? " active" : ""}" data-value="${v}" aria-label="${v} estrellas">${starIcon()}</button>`
     )
     .join("");
   return `<div class="stars" data-id="${prompt.id}">${stars}</div>`;
@@ -196,6 +199,14 @@ function onStarClick(starsEl, starBtn) {
   const clickedValue = Number(starBtn.dataset.value);
   const prompt = livePrompts.find((p) => p.id === id);
   if (!prompt) return;
+
+  if (clickedValue === 6 && prompt.rating !== 6) {
+    const topCount = livePrompts.filter((p) => p.rating === 6).length;
+    if (topCount >= MAX_TOP_RATED) {
+      showToast(`Solo ${MAX_TOP_RATED} prompts pueden tener la estrella roja`);
+      return;
+    }
+  }
 
   const newRating = prompt.rating === clickedValue ? 0 : clickedValue;
   prompt.rating = newRating;
@@ -241,8 +252,9 @@ function chevronIcon() {
   return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
 }
 
-function showToast() {
+function showToast(message = "Prompt copiado") {
   const toast = document.getElementById("toast");
+  toast.querySelector("span").textContent = message;
   toast.hidden = false;
   requestAnimationFrame(() => toast.classList.add("show"));
   clearTimeout(showToast._t);

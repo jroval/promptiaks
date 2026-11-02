@@ -1011,5 +1011,85 @@ The final result must resemble a professionally hand-drawn colored pencil illust
     title: "Acuarela",
     image: "images/prompt-50.webp",
     text: `Transform the original photograph into a delicate, hand-painted watercolor illustration on fine white watercolor paper. Recreate the subject using translucent pigment washes, layered earthy tones, soft color bleeding, irregular brush edges, and subtle granulated textures. Combine loose organic watercolor shapes with selective dry-brush strokes and fine pencil detailing to define the face, hair, fur, clothing, and natural textures. Preserve the subject’s recognizable identity, distinctive features, expression, hairstyle, original colors, proportions, and pose. Use warm, muted pigments, gentle tonal transitions, selective dark accents, and carefully preserved white highlights. Concentrate the richest detail around the face and eyes, allowing some lower edges to dissolve into unfinished brushstrokes and exposed paper. Place the subject against a minimal black-and-white background with very simple abstract shapes or soft monochrome washes, kept understated and uncluttered so the figure stands out clearly.`
+  },
+  {
+    id: 51,
+    rating: 0,
+    title: "Óleo Contemporáneo",
+    image: "images/prompt-51.webp",
+    text: `Transform the uploaded photograph into an expressive, hand-painted oil portrait with a contemporary impressionist aesthetic.
+
+**STRICT FACIAL IDENTITY:** Preserve the subject’s exact facial structure, proportions, eye shape and spacing, eyebrows, nose, lips, jawline, cheekbones, natural asymmetries, expression, gaze, skin tone, hairstyle, and hair color. Maintain unmistakable facial resemblance without beautification, idealization, or anatomical changes.
+
+Preserve the original pose, clothing, body proportions, camera angle, and subject cropping.
+
+**PAINTING STYLE:** Use confident, visible oil brushstrokes, textured impasto, layered pigments, and expressive painterly blending. Render facial features with precise, controlled brushwork while keeping hair, clothing, and outer contours loose and gestural. Apply warm peach, coral, ochre, creamy highlights, subtle lavender shadows, and soft directional lighting.
+
+**BACKGROUND REPLACEMENT:** Completely remove the original background, regardless of its content. Replace it entirely with a flat, abstract, hand-painted oil canvas featuring broad, irregular brushstrokes in pastel peach, blush pink, warm apricot, pale yellow, and muted lavender. Keep the background softly blended, textured, and visually independent from the subject. No recognizable scenery, objects, photographic details, or remnants of the original environment.
+
+Achieve an authentic oil-painted appearance with maximum facial likeness. Avoid generic faces, facial restructuring, photorealism, digital smoothing, and photographic backgrounds.`
+  },
+  {
+    id: 52,
+    rating: 0,
+    title: "Prompt 52 - (pon aqui el nombre del estilo)",
+    image: "images/prompt-52.webp",
+    text: `Pega aqui el texto completo del prompt 52...`
+  },
+  {
+    id: 53,
+    rating: 0,
+    title: "Prompt 53 - (pon aqui el nombre del estilo)",
+    image: "images/prompt-53.webp",
+    text: `Pega aqui el texto completo del prompt 53...`
+  },
+  {
+    id: 54,
+    rating: 0,
+    title: "Prompt 54 - (pon aqui el nombre del estilo)",
+    image: "images/prompt-54.webp",
+    text: `Pega aqui el texto completo del prompt 54...`
+  },
+  {
+    id: 55,
+    rating: 0,
+    title: "Prompt 55 - (pon aqui el nombre del estilo)",
+    image: "images/prompt-55.webp",
+    text: `Pega aqui el texto completo del prompt 55...`
+  },
+  {
+    id: 56,
+    rating: 0,
+    title: "Prompt 56 - (pon aqui el nombre del estilo)",
+    image: "images/prompt-56.webp",
+    text: `Pega aqui el texto completo del prompt 56...`
+  },
+  {
+    id: 57,
+    rating: 0,
+    title: "Prompt 57 - (pon aqui el nombre del estilo)",
+    image: "images/prompt-57.webp",
+    text: `Pega aqui el texto completo del prompt 57...`
+  },
+  {
+    id: 58,
+    rating: 0,
+    title: "Prompt 58 - (pon aqui el nombre del estilo)",
+    image: "images/prompt-58.webp",
+    text: `Pega aqui el texto completo del prompt 58...`
+  },
+  {
+    id: 59,
+    rating: 0,
+    title: "Prompt 59 - (pon aqui el nombre del estilo)",
+    image: "images/prompt-59.webp",
+    text: `Pega aqui el texto completo del prompt 59...`
+  },
+  {
+    id: 60,
+    rating: 0,
+    title: "Prompt 60 - (pon aqui el nombre del estilo)",
+    image: "images/prompt-60.webp",
+    text: `Pega aqui el texto completo del prompt 60...`
   }
 ];
