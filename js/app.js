@@ -126,11 +126,29 @@ function textForOption(prompt, option) {
 
 let openMenu = null;
 
-function closeMenu() {
+function closeMenu(returnFocus = false) {
   if (!openMenu) return;
-  openMenu.menu.remove();
-  openMenu.btn.setAttribute("aria-expanded", "false");
+  const { menu, btn } = openMenu;
   openMenu = null;
+  menu.remove();
+  btn.setAttribute("aria-expanded", "false");
+  if (returnFocus) btn.focus({ preventScroll: true });
+}
+
+// Keyboard support: arrows move between options, Tab leaves the menu
+function onMenuKeydown(e) {
+  const items = [...openMenu.menu.querySelectorAll(".menu-item")];
+  const i = items.indexOf(document.activeElement);
+  if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+    e.preventDefault();
+    const step = e.key === "ArrowDown" ? 1 : -1;
+    items[(i + step + items.length) % items.length].focus({ preventScroll: true });
+  } else if (e.key === "Home" || e.key === "End") {
+    e.preventDefault();
+    items[e.key === "Home" ? 0 : items.length - 1].focus({ preventScroll: true });
+  } else if (e.key === "Tab") {
+    closeMenu(true);
+  }
 }
 
 function onOptionsClick(btn) {
@@ -169,18 +187,21 @@ function onOptionsClick(btn) {
       e.stopPropagation();
       const option = prompt.options[Number(item.dataset.index)];
       await copyText(textForOption(prompt, option));
-      closeMenu();
+      closeMenu(true);
       showToast();
     });
   });
+
+  menu.addEventListener("keydown", onMenuKeydown);
+  menu.querySelector(".menu-item").focus({ preventScroll: true });
 }
 
-document.addEventListener("click", closeMenu);
+document.addEventListener("click", () => closeMenu());
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeMenu();
+  if (e.key === "Escape") closeMenu(true);
 });
-window.addEventListener("resize", closeMenu);
-window.addEventListener("scroll", closeMenu, { passive: true });
+window.addEventListener("resize", () => closeMenu());
+window.addEventListener("scroll", () => closeMenu(), { passive: true });
 
 // The 6th (red) star is reserved for a handful of favourites
 const MAX_TOP_RATED = 5;
