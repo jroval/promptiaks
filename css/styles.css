@@ -1,3 +1,18 @@
+/* Self-hosted fonts (OFL) so visitors' IPs aren't sent to Google */
+@font-face {
+  font-family: "Sora";
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("../fonts/sora.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("../fonts/inter.woff2") format("woff2");
+}
+
 :root {
   color-scheme: dark;
   --bg: #08080b;
