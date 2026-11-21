@@ -155,10 +155,18 @@ body {
 
 .card-body {
   display: grid;
+  flex: 1;
   grid-template-columns: minmax(0, 1fr) auto;
+  /* the title row takes the slack, so stars and buttons line up across a row */
+  grid-template-rows: 1fr auto;
   align-items: center;
   gap: var(--space-sm) var(--space-md);
   padding-top: var(--space-md);
+}
+
+.card-title,
+.plate {
+  align-self: start;
 }
 
 .card-title {
@@ -406,7 +414,7 @@ body {
 @media (max-width: 40rem) {
   :root { --card-min: 150px; }
   .sheet { row-gap: var(--space-xl); }
-  .card-body { grid-template-columns: minmax(0, 1fr); }
+  .card-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr auto auto; }
   .card-title { font-size: var(--text-lg); }
   .plate { grid-column: 1; grid-row: 1; }
   .card-title { grid-row: 2; }
