@@ -53,7 +53,7 @@ function renderGrid() {
 
   grid.innerHTML = ordered
     .map((p, i) => `
-      <article class="card" data-id="${p.id}" style="--delay: ${(i % 12) * 45}ms">
+      <article class="card${p.rating === 6 ? " keeper" : ""}" data-id="${p.id}" style="--delay: ${(i % 12) * 45}ms">
         <div class="card-image-wrap">
           <img class="img-bg" src="${p.image}" alt="" aria-hidden="true" loading="lazy"
                onerror="this.onerror=null;this.src='${placeholderSVG}';">
@@ -64,6 +64,7 @@ function renderGrid() {
         </div>
         <div class="card-body">
           <h3 class="card-title">${escapeHTML(p.title)}</h3>
+          <span class="plate" aria-label="Prompt número ${p.id}">${p.id}</span>
           ${starRow(p)}
           <div class="card-footer">${footerButton(p)}</div>
         </div>
@@ -232,6 +233,8 @@ function onStarClick(starsEl, starBtn) {
   const newRating = prompt.rating === clickedValue ? 0 : clickedValue;
   prompt.rating = newRating;
   saveRatingOverride(id, newRating);
+  // the prints rise only on first load, not on every re-sort
+  document.getElementById("grid").classList.remove("intro");
   renderGrid();
 }
 
@@ -270,7 +273,7 @@ async function copyText(text) {
 }
 
 function chevronIcon() {
-  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
+  return `<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
 }
 
 function showToast(message = "Prompt copiado") {
@@ -286,14 +289,14 @@ function showToast(message = "Prompt copiado") {
 }
 
 function clipboardIcon() {
-  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  return `<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <rect x="9" y="2" width="6" height="4" rx="1"></rect>
     <path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"></path>
   </svg>`;
 }
 
 function starIcon() {
-  return `<svg viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>`;
+  return `<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>`;
 }
 
 function escapeHTML(str) {

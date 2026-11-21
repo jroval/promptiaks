@@ -4,36 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Colección personal de prompts de estilo para transformar fotos, cada uno con su imagen de ejemplo y listo para copiar.">
 <title>Prompts de Estilo</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff6ec4'/%3E%3Cstop offset='1' stop-color='%237c5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%23111'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
-<link rel="preload" href="fonts/sora.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230d1813'/%3E%3Crect x='9' y='6' width='14' height='20' fill='%23e8a04a'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/sofia-sans-extra-condensed.woff2" as="font" type="font/woff2" crossorigin>
 <script>
   document.write('<link rel="stylesheet" href="css/styles.css?v=' + Date.now() + '">');
 </script>
+<noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 </head>
 <body>
 
-  <div class="bg-glow" aria-hidden="true">
-    <span class="orb orb-a"></span>
-    <span class="orb orb-b"></span>
-    <span class="orb orb-c"></span>
-  </div>
-
-  <header class="site-header">
-    <p class="kicker">Colección personal</p>
-    <h1 class="title">Prompts de <span class="title-accent">Estilo</span></h1>
-    <p class="subtitle">Toca copiar y el prompt es tuyo</p>
+  <header class="masthead container">
+    <h1>Prompts de Estilo</h1>
+    <p class="lead">Colección personal. Toca copiar y el prompt es tuyo.</p>
   </header>
 
-  <main id="grid" class="grid"></main>
+  <main id="grid" class="sheet intro container"></main>
 
-  <div id="toast" class="toast" hidden>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden>
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
     <span>Prompt copiado</span>
   </div>
 
-  <footer class="site-footer">
-    <span id="count"></span> prompts guardados
+  <footer class="site-footer container">
+    <p><span id="count"></span> prompts guardados</p>
     <button id="export-btn" class="export-link" type="button">Exportar valoraciones</button>
   </footer>
 
